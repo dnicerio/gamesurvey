@@ -14,6 +14,13 @@ body {
 	line-height: .5;
 }
 
+@media (max-width: 460px) {
+	body {
+		margin: 0;
+		line-height: 1.2;
+	}
+}
+
 header {
 	color: white;
 	text-align: center;
@@ -41,12 +48,13 @@ form {
 	margin: .5rem auto;
 	padding: 3rem;
 	border-radius: 5px;
-	max-width: 500px;
+	max-width: 720px;
 }
 
-@media (max-width: 460px) {
+@media (max-width: 640px) {
 	form {
-		margin: 0;
+		margin: 0 .5rem;
+		line-height: 1.2;
 	}
 }
 
@@ -110,4 +118,8 @@ label {
 	background: blue;
 	cursor: pointer;
 	transform: scale(1.1);
+}
+
+.submit-center {
+	text-align: center;
 }
