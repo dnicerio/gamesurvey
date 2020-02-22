@@ -9,24 +9,24 @@
 	<body>
 		<header>
 			<h1 id="title">Survey for Gamers</h1>
-			<p id="description">Thank you for having the time to fill up this survey</p>
+			<p id="description">Thank you for taking the time to fill up this survey</p>
 		</header>
 		<form action="survey-form">
 			<div id="form-group">
 				<label for="name-label">Name</label>
-				<input type="text" id="name-label" class="long-box" required placeholder="Enter your name">
+				<input type="text" id="name" class="long-box" required placeholder="Enter your name">
 			</div>
 			<div id="form-group">
 				<label for="email-label">Email</label>
-				<input type="email" id="email-label" class="long-box" required placeholder="Enter your email">
+				<input type="email" id="email" class="long-box" required placeholder="Enter your email">
 			</div>
 			<div id="form-group">
 				<label for="number-label">Age (optional)</label>
-				<input type="number" id="number-label" min="1" max="150" class="short-box" required placeholder="Age">
+				<input type="number" id="number" min="1" max="150" class="short-box" required placeholder="Age">
 			</div>
 			<div id="form-group">
-				<label for="dropdown-label">How many hours you spend playing games in one day?</label>
-				<select id="dropdown-label" name="dropdown" class="dropdown-box" required>
+				<label for="dropdown-label">How many hours do you spend playing games in one day?</label>
+				<select id="dropdown" name="hours-play" class="dropdown-box" required>
 					<option disabled selected>Select an option</option>
 					<option value="2hrs">~2 hours or less</option>
 					<option value="4hrs">~4 hours</option>
@@ -35,63 +35,63 @@
 				</select>
 			</div>
 			<div id="form-group">
-				<p>How many days you play games in one week?
+				<p>How many days do you play games in one week?
 				</p>
 				<label for="radio-label">
-					<input type="radio" id="radio-label" name="radio-answer" checked
+					<input type="radio" id="radio-label" name="days-play" value="1-3days" checked
 					>1-3 days
 				</label>
 				<label for="radio-label">
-					<input type="radio" id="radio-label" name="radio-answer"
+					<input type="radio" id="radio-label" name="days-play" value="4-5days"
 					>4-5 days
 				</label>
 				<label for="radio-label">
-					<input type="radio" id="radio-label" name="radio-answer"
+					<input type="radio" id="radio-label" name="days-play" value="6-7days"
 					>6-7 days
 				</label>
 			</div>
 			<div id="form-group">
-				<p>What game genre is/are your favorite?
+				<p>What game genres do you like the most?
 				</p>	
 				<label for="checkbox-label">
-					<input type="checkbox" id="checkbox-label" value="shooters"
-					>FPS and 3rd Person shooters
+					<input type="checkbox" id="checkbox-label" name="genre" value="shooters"
+					>FPS and 3rd Person Shooters
 				</label>
 				<label for="checkbox-label">
-					<input type="checkbox" id="checkbox-label" value="fighting"
+					<input type="checkbox" id="checkbox-label" name="genre" value="fighting"
 					>Fighting Games
 				</label>
 				<label for="checkbox-label">
-					<input type="checkbox" id="checkbox-label" value="racing"
-					>Racing (Race Sims, Casual Racing Games etc.)
+					<input type="checkbox" id="checkbox-label" name="genre" value="racing"
+					>Racing (i.e. Race Sims, Arcade Racing)
 				</label>
 				<label for="checkbox-label">
-					<input type="checkbox" id="checkbox-label" value="sports"
+					<input type="checkbox" id="checkbox-label" name="genre" value="sports"
 					>Sports
 				</label>
 				<label for="checkbox-label">
-					<input type="checkbox" id="checkbox-label" value="puzzle"
+					<input type="checkbox" id="checkbox-label" name="genre" value="puzzle"
 					>Puzzle
 				</label>
 				<label for="checkbox-label">
-					<input type="checkbox" id="checkbox-label" value="rpg"
-					>Role-playing Games
+					<input type="checkbox" id="checkbox-label" name="genre" value="rpg"
+					>Role Playing Games
 				</label>
 				<label for="checkbox-label">
-					<input type="checkbox" id="checkbox-label" value="board"
+					<input type="checkbox" id="checkbox-label" name="genre" value="board"
 					>Board Games
 				</label>
 			</div>
 			<div id="form-group">
 				<label for="textarea-label">Any comments or suggestions?</label>
-				<textarea id="textarea-label" class="long-box" maxlength="500" 
-				placeholder="Enter your suggestions here...(Max 500 characters)"></textarea>
+				<textarea id="textarea-label" name="comment" class="long-box" maxlength="500" 
+				placeholder="Enter your suggestions here... (Max 500 characters)"></textarea>
 			</div>
 			<div id="form-group" class="submit-center">
 				<label for="submit-label"></label>				
 				<input type="submit" id="submit-label" value="Submit" onclick="document.location = 'https://www.youtube.com/watch?v=dQw4w9WgXcQ'">
 			</div>
 		</form>
-		<script src="script.js"></script>
+	<script src="script.js"></script>
 	</body>
 </html>
