@@ -52,16 +52,23 @@ form {
 	max-width: 720px;
 }
 
-@media (max-width: 640px) {
+@media (max-width: 768px) {
 	form {
 		margin: 0 .5rem .5rem .5rem;
+		padding: 1.5rem;
 		line-height: 1.2;
 	}
 }
 
 #form-group {
 	margin: 1rem 2rem;
-	padding: .5rem 0 .5rem;
+	padding: .5rem 0 .5rem 0;
+}
+
+@media (max-width: 640px) {
+	#form-group {
+		margin: 1rem 1.5rem 1rem 1rem;
+	}
 }
 
 label {
@@ -103,7 +110,7 @@ input {
 
 #radio-label, #checkbox-label {
 	display: inline-block;
-	margin: ..25rem 1rem .25rem 0;
+	margin: .25rem 1rem .25rem 0;
 }
 
 #textarea-label {

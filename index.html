@@ -2,40 +2,72 @@
 <html>
 	<head>
 		<title>Survey for Gamers</title>
+		<meta name="description" content="Survey for Gamers">
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<link rel="stylesheet" href="style.css">
 	</head>
 	<body>
 		<header>
-			<h1 id="title">Survey for Gamers</h1>
-			<p id="description">Thank you for taking the time to fill up this survey</p>
+			<h1 id="title">
+				Survey for Gamers
+			</h1>
+			<p id="description">
+				Thank you for taking the time to fill up this survey
+			</p>
 		</header>
-		<form action="survey-form">
+		<form action="results.html" method="GET">
 			<div id="form-group">
-				<label for="name-label">Name</label>
-				<input type="text" id="name" class="long-box" required placeholder="Enter your name">
+				<label for="name-label">
+					Name
+				</label>
+				<input type="text" id="name" name="name" class="long-box" required placeholder="Enter your name">
 			</div>
 			<div id="form-group">
-				<label for="email-label">Email</label>
-				<input type="email" id="email" class="long-box" required placeholder="Enter your email">
+				<label for="email-label">
+					Email
+				</label>
+				<input type="email" id="email" name="email" class="long-box" required placeholder="Enter your email">
 			</div>
 			<div id="form-group">
-				<label for="number-label">Age (optional)</label>
-				<input type="number" id="number" min="1" max="150" class="short-box" required placeholder="Age">
+				<label for="number-label">
+					Age (optional)
+				</label>
+				<input type="number" id="number" name="age" min="1" max="150" class="short-box" required placeholder="Age">
 			</div>
 			<div id="form-group">
-				<label for="dropdown-label">How many hours do you spend playing games in one day?</label>
+				<label 
+					for="dropdown-label"
+					>How many hours do you spend playing games in one day?
+				</label>
 				<select id="dropdown" name="hours-play" class="dropdown-box" required>
-					<option disabled selected>Select an option</option>
-					<option value="2hrs">~2 hours or less</option>
-					<option value="4hrs">~4 hours</option>
-					<option value="6hrs">~6 hours</option>
-					<option value="8hrs">~8 hours or more</option>
+					<option 
+						disabled 
+						selected
+						>Select an option
+					</option>
+					<option 
+						value="2hrs"
+						>~2 hours or less
+					</option>
+					<option 
+						value="4hrs"
+						>~4 hours
+					</option>
+					<option 
+						value="6hrs"
+						>~6 hours
+					</option>
+					<option 
+						value="8hrs"
+						>~8 hours or more
+					</option>
 				</select>
 			</div>
 			<div id="form-group">
-				<p>How many days do you play games in one week?
+				<p>
+					How many days do you play games in one week?
 				</p>
 				<label for="radio-label">
 					<input type="radio" id="radio-label" name="days-play" value="1-3days" checked
@@ -51,7 +83,8 @@
 				</label>
 			</div>
 			<div id="form-group">
-				<p>What game genres do you like the most?
+				<p>
+					What game genres do you like the most?
 				</p>	
 				<label for="checkbox-label">
 					<input type="checkbox" id="checkbox-label" name="genre" value="shooters"
@@ -83,15 +116,25 @@
 				</label>
 			</div>
 			<div id="form-group">
-				<label for="textarea-label">Any comments or suggestions?</label>
-				<textarea id="textarea-label" name="comment" class="long-box" maxlength="500" 
-				placeholder="Enter your suggestions here... (Max 500 characters)"></textarea>
+				<label 
+					for="textarea-label"
+					>Any comments or suggestions?
+				</label>
+				<textarea 
+					id="textarea-label" 
+					name="comment" 
+					class="long-box" 
+					maxlength="500" 
+					placeholder="Enter your suggestions here... (Max 500 characters)">
+				</textarea>
 			</div>
 			<div id="form-group" class="submit-center">
-				<label for="submit-label"></label>				
-				<input type="submit" id="submit-label" value="Submit" onclick="document.location = 'https://www.youtube.com/watch?v=dQw4w9WgXcQ'">
+				<label 
+					for="submit-label">
+				</label>				
+				<input type="submit" id="submit-label" value="Submit">
 			</div>
 		</form>
-	<script src="script.js"></script>
+	<script src="main.js"></script>
 	</body>
 </html>
